@@ -1,7 +1,7 @@
 const Stripe = require('stripe')
 const products = require('./products')
 
-const stripe = Stripe("sk_test_51NXIttIOl0zufqZP4JKyzKTdkpje7aTIIBg72GXSHht4FwY5gAt0hHR1xfy96neDjWskyT59RxQEImfr0PjLLt35009Gocm7gy");
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 //using IFI -> automatically invoked function expression
 (async () => {
