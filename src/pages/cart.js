@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useShoppingCart } from 'use-shopping-cart'
 
-const cart = () => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+const Cart = () => {
+
     const { cartCount, cartDetails, formattedTotalPrice, redirectToCheckout, clearCart } = useShoppingCart();
     const [isRedirecting, setRedirecting] = useState(false)
 
@@ -82,4 +82,4 @@ const cart = () => {
     )
 }
 
-export default cart
+export default Cart
