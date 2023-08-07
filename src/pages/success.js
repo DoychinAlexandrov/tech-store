@@ -6,7 +6,7 @@ import { useShoppingCart } from 'use-shopping-cart'
 
 
 const success = () => {
-    eslint - disable - next - line react - hooks / exhaustive - deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const router = useRouter()
     const { clearCart } = useShoppingCart()
     const sessionId = router.query.session_id;

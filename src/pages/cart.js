@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { useShoppingCart } from 'use-shopping-cart'
 
 const cart = () => {
-    eslint - disable - next - line react - hooks / exhaustive - deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const { cartCount, cartDetails, formattedTotalPrice, redirectToCheckout, clearCart } = useShoppingCart();
     const [isRedirecting, setRedirecting] = useState(false)
 
